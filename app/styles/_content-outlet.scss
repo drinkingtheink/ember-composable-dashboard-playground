@@ -1,0 +1,31 @@
+$app-border-radius: 5px;
+$dark: #333;
+$light: #eaeaea;
+
+.content-outlet {
+	padding: .5em 1em;
+	box-shadow: 0px 5px 14px 0px rgba(102,102,102,0.57);
+	margin-bottom: 1em;
+	border-radius: $app-border-radius;
+
+	.content-outlet-title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.content-outlet-link {
+		display: block;
+		text-align: center;
+		padding: .5em;
+	}
+
+	&.inverted {
+		background: $dark;
+
+		.content-outlet-title,
+		.content-outlet-body,
+		.content-outlet-link {
+			color: $light;
+		}
+	}
+}

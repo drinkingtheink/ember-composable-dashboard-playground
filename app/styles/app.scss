@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import './dashboard';
+@import './content-outlet';
+
+html,
+body {
+	height: 100%;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.app-header {
+	text-align: center;
+}
