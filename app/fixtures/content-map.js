@@ -3,7 +3,7 @@ const content = [
 		title: 'Neque porro quisquam',
 		link: '/bill-pay',
 		linkText: 'Pay Your Bills',
-		invertColors: true,
+		invertColors: false,
 		removePadding: false,
 		body: 'Nam quis metus porttitor, euismod diam sit amet, molestie lorem. Suspendisse finibus porta neque non finibus. Donec eros felis, malesuada ut posuere nec, faucibus vel lacus. Suspendisse commodo scelerisque odio elementum cursus. Cras in turpis quis mauris iaculis commodo.'
 	},
