@@ -3,11 +3,21 @@ $dark: #333;
 $light: #eaeaea;
 
 .content-outlet {
-	box-shadow: 0px 5px 14px 0px rgba(102,102,102,0.57);
+	box-shadow: 0px 5px 14px 0px rgba($dark, .3);
   border-radius: $app-border-radius;
+  background-color: white;
 
   .content {
     padding: .5em 1em;
+  }
+
+  .content-dimensions {
+    text-align: center;
+
+    .dimension {
+      background: $light;
+      padding: .5em;
+    }
   }
 
 	.content-outlet-title {
@@ -19,7 +29,9 @@ $light: #eaeaea;
 		display: block;
 		text-align: center;
 		padding: .5em;
-		text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: .5em;
+    font-weight: 800;
 	}
 
 	&.inverted {
