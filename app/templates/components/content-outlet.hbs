@@ -5,7 +5,12 @@
   </p>
 
   <h2 class="content-outlet-title">{{content.title}}</h2>
-  <p class="content-outlet-body">{{content.body}}</p>
+
+  {{#if content.body}}
+    <p class="content-outlet-body">{{content.body}}</p>
+  {{else}}
+    <ContentOutletErrorDisplay></ContentOutletErrorDisplay>
+  {{/if}}
 
   {{#if content.link}}
     <a href={{content.link}} class="content-outlet-link">{{content.linkText}}</a>
