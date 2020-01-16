@@ -10,4 +10,9 @@
   {{#if content.link}}
     <a href={{content.link}} class="content-outlet-link">{{content.linkText}}</a>
   {{/if}}
+
+  <section class="content-outlet-actions">
+    <button class="toggle-invert-colors" {{action "toggleInvertColors"}}>Invert Colors</button>
+    <button class="toggle-padding" {{action "toggleNoPadding"}}>{{if @removePadding "Add" "Remove"}} Padding</button>
+  </section>
 </div>

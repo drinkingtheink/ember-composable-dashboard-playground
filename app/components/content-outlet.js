@@ -14,10 +14,28 @@ export default Component.extend({
     this.setDimensions();
   },
 
+  didUpdateAttrs() {
+    this._super(...arguments);
+    if(this.recalculateDimensions) {
+      this.setDimensions();
+    }
+  },
+
   setDimensions() {
     let elemHeight = document.getElementById(`${this.outletId}`).offsetHeight;
     let elemWidth = document.getElementById(`${this.outletId}`).offsetWidth;
     this.set(`height`, elemHeight);
     this.set(`width`, elemWidth);    
   },
+
+  actions: {
+    toggleInvertColors() {
+      let newSetting = !this.get('invertColors');
+      this.set('invertColors', newSetting);
+    },
+    toggleNoPadding() {
+      let newSetting = !this.get('removePadding');
+      this.set('removePadding', newSetting);
+    }
+  }
 });

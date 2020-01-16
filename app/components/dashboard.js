@@ -5,6 +5,7 @@ export default Component.extend({
 	classNames: ['app-dashboard'],
   content: content,
   resizeListener: null,
+  recalculateDimensions: false,
 	getCalcPropValue(item, prop) {
 		return parseInt(window.getComputedStyle(item).getPropertyValue(prop));
   },
@@ -36,5 +37,7 @@ export default Component.extend({
 		}
 
 		this.element.querySelectorAll('.content-outlet').forEach(resizeItem);
+    this.set('recalculateDimensions', true);
+    setTimeout(() => { this.set('recalculateDimensions', false) }, 50);
 	},
 });
