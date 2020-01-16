@@ -47,5 +47,11 @@ $light: #eaeaea;
   &.flattened {
     background-color: inherit;
     box-shadow: none;
+
+    .content-outlet-title,
+    .content-outlet-body,
+    .content-outlet-link {
+      color: $dark;
+    }
   }
 }
