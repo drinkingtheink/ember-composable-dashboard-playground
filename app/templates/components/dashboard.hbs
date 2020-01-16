@@ -1,3 +1,7 @@
 {{#each this.content as |content index|}}
-	{{content-outlet content=content invertColors=content.invertColors outletIndex=index}}
+	{{content-outlet 
+    content=content 
+    invertColors=content.invertColors 
+    outletIndex=index 
+    removePadding=content.removePadding}}
 {{/each}}

@@ -3,7 +3,7 @@ import { computed } from '@ember/object';
 
 export default Component.extend({
 	classNames: ['content-outlet'],
-	classNameBindings: ['invertColors:inverted'],
+	classNameBindings: ['invertColors:inverted', 'removePadding:flattened'],
   height: null,
   width: null,
   outletId: computed('outletIndex', function() {

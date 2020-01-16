@@ -20,7 +20,7 @@ const content = [
 		link: '',
 		linkText: '',
 		invertColors: false,
-		removePadding: false,
+		removePadding: true,
 		body: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi.'
 	},
 	{
@@ -44,7 +44,7 @@ const content = [
     link: '/accounts',
     linkText: 'View Your Accounts',
     invertColors: false,
-    removePadding: false,
+    removePadding: true,
     body: 'Proin sagittis urna nec vestibulum consequat. Nullam eget tortor finibus, consectetur nisi sed, dictum libero. Nunc condimentum posuere quam. Duis eros nunc, malesuada at metus eget, gravida dapibus massa. Donec quis urna eros. Duis non arcu porttitor, volutpat dui a, lobortis ipsum.'
   },
   {

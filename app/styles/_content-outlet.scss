@@ -43,4 +43,9 @@ $light: #eaeaea;
 			color: $light;
 		}
 	}
+
+  &.flattened {
+    background-color: inherit;
+    box-shadow: none;
+  }
 }
